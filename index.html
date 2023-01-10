@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nguyen Minh Quang</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container main__content">
+        <header class="header">
+          <a href="#" class="header__logo">
+            <div>
+              <img src="images/Logo.png" alt="Logo" class="header__logo-img" />
+            </div>
+            <h1 class="header__logo-text">Design Guild</h1>
+          </a>
+          <div class="login-wrap">
+            <form class="login__form">
+              <div class="form__wrap">
+                <label for="email" class="form__label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form__control"
+                />
+              </div>
+              <div class="form__wrap">
+                <label for="password" class="form__label">Password</label>
+                <div class="password__wrap">
+                  <input
+                    type="password"
+                    name="password"
+                    class="form__control"
+                    id="password"
+                  />
+                  <div class="password-icon">
+                    <i class="bx bxs-hide"></i>
+                  </div>
+                  <a href="#" class="link link__forgot">Forgot password?</a>
+                </div>
+              </div>
+              <div class="form__btn">
+                <button type="button" class="btn btn-large btn--primary">
+                  Login
+                </button>
+              </div>
+            </form>
+          </div>
+        </header>
+        <section class="body row">
+          <div class="section__wrap col-6">
+            <h1 class="section__title">Welcome to Design Guild</h1>
+            <p class="section__desc">
+              Join the world's largest community for designers
+            </p>
+            <div class="section__content">
+              <div class="recent-login">
+                <h3 class="recen-login__title">Recent Logins</h3>
+                <div class="recent-login__card-wrap">
+                  <div class="recent-login__card">
+                    <img
+                      src="images/avartar1.png"
+                      alt="avatar"
+                      class="recent-login__avatar"
+                    />
+                    <p class="recent-login__name">Aliana Hepburn</p>
+                  </div>
+                  <div class="recent-login__card">
+                    <img
+                      src="images/avartar2.png"
+                      alt="avatar"
+                      class="recent-login__avatar"
+                    />
+                    <p class="recent-login__name">Andrew Pochink</p>
+                  </div>
+                  <div class="recent-login__card">
+                    <div class="btn-add">
+                      <i class="bx bx-plus"></i>
+                    </div>
+                    <p class="recent-login__name">Add Account</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__wrap sign-up col-6">
+            <h2 class="section__title sign-up__title">
+              Join our <br />
+              community today
+            </h2>
+            <p class="section__desc">
+              Get connected, find designers to start a project
+            </p>
+            <div class="section__content">
+              <div class="sign-up__content">
+                <a href="#" class="btn-xl btn btn--primary" id="btn-signup"
+                  >Sign Up</a
+                >
+                <p>Or, login with</p>
+                <div class="other-login">
+                  <a href="#" class="btn btn-md btn-transparent">Facebook</a>
+                  <a href="#" class="btn btn-md btn-transparent">Linked In</a>
+                  <a href="#" class="btn btn-md btn-transparent">Google</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <a href="#" class="footer__logo">
+              <div>
+                <img
+                  src="images/logo_footer.png"
+                  alt="Logo"
+                  class="footer__logo-img"
+                />
+              </div>
+              <h1 class="footer__logo-text">Design Guild</h1>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

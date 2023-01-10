@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap");
+:root {
+  --text-color: #3c2c20;
+  --first-color: #fb6564;
+  --second-color: #a03cea;
+  --border-color: #c1a28b;
+  --radius: 8px;
+  --bg-color: #f8f4f2;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1455px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main__content {
+  background-color: var(--bg-color);
+  background-image: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  margin-right: 1.6rem;
+}
+
+.header__logo-text {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.login__form {
+  display: flex;
+  align-items: center;
+}
+
+.form__wrap {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.2rem;
+  position: relative;
+}
+
+.form__label {
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  transform: translateY(calc(-50% - 1.2rem));
+}
+
+.form__control {
+  padding: 1.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  outline: none;
+  font-size: 1.6rem;
+  min-width: 37.4rem;
+}
+
+.password__wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.password-icon {
+  position: absolute;
+  top: 50%;
+  right: 1.8rem;
+  font-size: 1.6rem;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.link {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.link:hover {
+  color: var(--border-color);
+}
+
+.link__forgot {
+  font-size: 1.6rem;
+  margin-top: 1.6rem;
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(50% + 1.8rem));
+}
+
+.btn {
+  cursor: pointer;
+  opacity: 0.8;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: var(--radius);
+  display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.btn:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.btn-xl {
+  padding: 2.2rem 5.6rem;
+}
+
+.btn-large {
+  padding: 1.6rem 4.8rem;
+}
+
+.btn-md {
+  padding: 0.8rem 2.2rem;
+}
+
+.btn--primary {
+  background-image: linear-gradient(
+    to left,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+
+.btn-transparent {
+  color: #000;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+}
+
+.form__btn {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -12px;
+}
+
+.col-6 {
+  width: calc(50% - 24px);
+  margin: 0 12px;
+}
+
+.body {
+  padding: 4.8rem;
+}
+
+.section__title {
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 2.4rem;
+}
+
+.section__desc {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--text-color);
+}
+
+.section__content {
+  margin-top: 4rem;
+}
+
+.recen-login__title {
+  font-size: 1.8rem;
+}
+
+.recent-login__card-wrap {
+  display: flex;
+  padding: 2.4rem;
+}
+
+.recent-login__card {
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+  margin-right: 1.8rem;
+}
+
+.recent-login__card:hover {
+  transform: scale(1.1);
+}
+
+.recent-login__avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.recent-login__name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 2.4rem;
+  background-color: #dfcfc2;
+  font-size: 2.8rem;
+}
+
+.sign-up__title {
+  font-size: 3.2rem;
+}
+
+#btn-signup {
+  display: block;
+  text-align: center;
+  width: 50%;
+}
+
+.sign-up__content p {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 50%;
+  margin: 2.4rem 0;
+}
+
+.other-login a {
+  margin-right: 1.6rem;
+}
+
+.footer {
+  background-image: linear-gradient(
+    to left,
+    var(--first-color),
+    var(--second-color)
+  );
+}
+
+.footer__logo {
+  display: none;
+}
+
+.footer__content {
+  height: 150px;
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 58%;
+  }
+  .form__control {
+    min-width: 0;
+  }
+  .body {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  html {
+    font-size: 50%;
+  }
+  .section__wrap {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sign-up__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    border-radius: 28px;
+  }
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    order: 2;
+    flex-direction: column;
+  }
+
+  .login__form {
+    flex-direction: column;
+  }
+
+  .form__wrap {
+    width: 100%;
+    margin-bottom: 2.8rem;
+  }
+  .form__control {
+    width: 100%;
+  }
+
+  .form__btn {
+    width: 100%;
+    padding: 1.2rem;
+  }
+
+  .form__btn button {
+    width: 100%;
+  }
+
+  .body {
+    order: 1;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .body .section__wrap:first-child {
+    display: none;
+  }
+
+  .link__forgot {
+    right: 0;
+  }
+
+  .section__wrap {
+    align-items: stretch;
+  }
+
+  #btn-signup {
+    width: 100%;
+  }
+
+  .footer {
+    order: -1;
+  }
+
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    display: flex;
+    align-items: center;
+  }
+  .footer__logo-img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    margin-right: 1.6rem;
+  }
+  .footer__logo-text {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #fff;
+  }
+}
