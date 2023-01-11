@@ -344,7 +344,7 @@ a {
     border-radius: 28px;
   }
 
-  .main__content {
+  .main__content .container {
     display: flex;
     flex-direction: column;
   }
