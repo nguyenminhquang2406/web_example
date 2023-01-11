@@ -341,7 +341,6 @@ a {
   .main {
     display: flex;
     flex-direction: column;
-    border-radius: 28px;
   }
 
   .main__content .container {
